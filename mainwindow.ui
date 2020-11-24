@@ -299,7 +299,7 @@ QComboBox {
       <property name="geometry">
        <rect>
         <x>470</x>
-        <y>240</y>
+        <y>150</y>
         <width>131</width>
         <height>16</height>
        </rect>
@@ -318,7 +318,7 @@ QComboBox {
        <rect>
         <x>-30</x>
         <y>20</y>
-        <width>431</width>
+        <width>421</width>
         <height>41</height>
        </rect>
       </property>
@@ -623,10 +623,11 @@ color: #1C2951;
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="ajouter_client"/>
-   <addaction name="trouver_client"/>
-   <addaction name="modifier_client"/>
-   <addaction name="supprimer_client"/>
+   <addaction name="ajouter_fac"/>
+   <addaction name="modifier_fac"/>
+   <addaction name="trouver_fac"/>
+   <addaction name="suprimer_fac"/>
+   <addaction name="stat_facture"/>
   </widget>
   <widget class="QToolBar" name="toolBar_2">
    <property name="windowTitle">
@@ -641,11 +642,10 @@ color: #1C2951;
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="suprimer_fac"/>
-   <addaction name="ajouter_fac"/>
-   <addaction name="stat_facture"/>
-   <addaction name="trouver_fac"/>
-   <addaction name="modifier_fac"/>
+   <addaction name="trouver_client"/>
+   <addaction name="modifier_client"/>
+   <addaction name="ajouter_client"/>
+   <addaction name="supprimer_client"/>
   </widget>
   <action name="ajouter_client">
    <property name="icon">
