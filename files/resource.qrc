@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>2.png</file>
+        <file>583453e9474c5 - Copie.jpg</file>
+        <file>ajouter.png</file>
+        <file>analystic__chart__report__pie__graph__statics-512.png</file>
+        <file>icons8-annuler-48.png</file>
+        <file>icons8-calendrier-96.png</file>
+        <file>icons8-chercher-64.png</file>
+        <file>icons8-coche-48.png</file>
+        <file>icons8-effacer-26.png</file>
+        <file>icons8-effacer-52.png</file>
+        <file>icons8-modifier-48.png</file>
+        <file>icons8-plus-48.png</file>
+        <file>icons8-vérifié-48.png</file>
+        <file>images.png</file>
+        <file>mod.png</file>
+        <file>modifier.jpg</file>
+        <file>photo-1520034475321-cbe63696469a.jpg</file>
+        <file>resource.qrc</file>
+        <file>supprimer.png</file>
+        <file>trouver.png</file>
+    </qresource>
+    <qresource prefix="/new/prefix2"/>
+</RCC>
