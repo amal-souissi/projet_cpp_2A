@@ -7,6 +7,9 @@
 #include<QMessageBox>
 #include<QValidator>
 #include"statistiquesfact.h"
+#include<QPrinter>
+#include<QPrintDialog>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -47,6 +50,8 @@ private slots:
     void on_filtrer_client_textChanged(const QString &arg1);
 
     void on_id_client_textChanged(const QString &arg1);
+
+    void on_imprim_fact_triggered();
 
 private:
     Ui::MainWindow *ui;

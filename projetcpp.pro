@@ -1,4 +1,4 @@
-QT       += core gui sql charts
+QT       += core gui sql charts printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,21 +16,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    admin.cpp \
+    amal.cpp \
     client.cpp \
     connection.cpp \
     facture.cpp \
+    login.cpp \
     main.cpp \
     mainwindow.cpp \
     statistiquesfact.cpp
 
 HEADERS += \
+    admin.h \
     client.h \
     connection.h \
     facture.h \
+    login.h \
     mainwindow.h \
     statistiquesfact.h
 
 FORMS += \
+    login.ui \
     mainwindow.ui \
     statistiquesfact.ui
 
@@ -40,4 +46,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    files/resource.qrc
+    resources.qrc

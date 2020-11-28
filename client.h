@@ -13,12 +13,15 @@ private:
     QString nom;
     QString prenom;
     QDate date_n;
+    QString email;
+    int num_tel;
+
 
     facture tmpfacture;
 
 public:
     client();
-    client(int,QString,QString,QDate);
+    client(int,QString,QString,QDate,QString,int);
     ~client();
 
     int getId();
@@ -29,6 +32,11 @@ public:
     void setPrenom(QString);
     QDate getDate_n();
     void setDate_n(QDate);
+    QString getemail();
+    void setemail(QString);
+    int getnum_tel();
+    void setnum_tel(int);
+
 
     bool ajouter();
     bool supprimer(int);

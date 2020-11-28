@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1157</width>
+    <width>1329</width>
     <height>644</height>
    </rect>
   </property>
@@ -17,9 +17,9 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>-10</x>
+      <x>0</x>
       <y>0</y>
-      <width>1161</width>
+      <width>1321</width>
       <height>591</height>
      </rect>
     </property>
@@ -35,15 +35,17 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="styleSheet">
      <string notr="true">urlimage: url(:/2.png);
+image: url(:/files/2.png);
+background-image: url(:/files/583453e9474c5 - Copie.jpg);
+image: url(:/files/583453e9474c5 - Copie.jpg);
 background-color: rgb(193, 193, 193);
 background-color: rgb(194, 194, 194);
-background-image: url(:/new/prefix1/583453e9474c5 - Copie.jpg);
 background-color: rgb(206, 206, 206);
 image: url(:/2.png);
 image: url(:/2.png);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -52,24 +54,29 @@ image: url(:/2.png);</string>
      <widget class="QLabel" name="filtrer">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>-100</x>
         <y>10</y>
-        <width>361</width>
+        <width>481</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
+
+
 {
+
+image: url(:/files/2.png);
 
 color: #1C2951;
  border-style: outset;
-     font: bold 16px;
+     font: bold 14px;
      min-width: 8em;
      padding: 6px;
 
 
-}</string>
+}
+</string>
       </property>
       <property name="text">
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:14pt; text-decoration: underline;&quot;&gt;Filtrer par Client:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -86,9 +93,11 @@ color: #1C2951;
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
-{
-image: url(:/new/prefix1/2.png);
 
+
+{
+
+image: url(:/files/2.png);
 
 color: #1C2951;
  border-style: outset;
@@ -115,9 +124,11 @@ color: #1C2951;
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
-{
-image: url(:/new/prefix1/2.png);
 
+
+{
+
+image: url(:/files/2.png);
 
 color: #1C2951;
  border-style: outset;
@@ -144,9 +155,11 @@ color: #1C2951;
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
-{
-image: url(:/new/prefix1/2.png);
 
+
+{
+
+image: url(:/files/2.png);
 
 color: #1C2951;
  border-style: outset;
@@ -156,7 +169,6 @@ color: #1C2951;
 
 
 }
-
 </string>
       </property>
       <property name="text">
@@ -166,7 +178,7 @@ color: #1C2951;
      <widget class="QLineEdit" name="filtrer_client">
       <property name="geometry">
        <rect>
-        <x>390</x>
+        <x>400</x>
         <y>20</y>
         <width>201</width>
         <height>41</height>
@@ -233,9 +245,9 @@ color: #1C2951;
      <widget class="QTableView" name="table_fac">
       <property name="geometry">
        <rect>
-        <x>620</x>
+        <x>630</x>
         <y>20</y>
-        <width>541</width>
+        <width>681</width>
         <height>521</height>
        </rect>
       </property>
@@ -298,8 +310,8 @@ QComboBox {
      <widget class="QLabel" name="nom_prenom_client">
       <property name="geometry">
        <rect>
-        <x>470</x>
-        <y>150</y>
+        <x>460</x>
+        <y>390</y>
         <width>131</width>
         <height>16</height>
        </rect>
@@ -319,13 +331,14 @@ QComboBox {
         <x>-30</x>
         <y>20</y>
         <width>421</width>
-        <height>41</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
-{
 
+{
+	image: url(:/files/2.png);
 color: #1C2951;
  border-style: outset;
      font: bold 16px;
@@ -351,9 +364,11 @@ color: #1C2951;
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
-{
-image: url(:/new/prefix1/2.png);
 
+
+{
+
+image: url(:/files/2.png);
 
 color: #1C2951;
  border-style: outset;
@@ -372,17 +387,19 @@ color: #1C2951;
      <widget class="QLabel" name="nom">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>170</y>
+        <x>40</x>
+        <y>160</y>
         <width>171</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
-{
-image: url(:/new/prefix1/2.png);
 
+
+{
+
+image: url(:/files/2.png);
 
 color: #1C2951;
  border-style: outset;
@@ -401,17 +418,19 @@ color: #1C2951;
      <widget class="QLabel" name="prenom">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>270</y>
+        <x>10</x>
+        <y>240</y>
         <width>211</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
-{
-image: url(:/new/prefix1/2.png);
 
+
+{
+
+image: url(:/files/2.png);
 
 color: #1C2951;
  border-style: outset;
@@ -430,17 +449,19 @@ color: #1C2951;
      <widget class="QLabel" name="date_naisance">
       <property name="geometry">
        <rect>
-        <x>-80</x>
-        <y>370</y>
+        <x>-70</x>
+        <y>320</y>
         <width>361</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel
-{
-image: url(:/new/prefix1/2.png);
 
+
+{
+
+image: url(:/files/2.png);
 
 color: #1C2951;
  border-style: outset;
@@ -486,8 +507,8 @@ color: #1C2951;
      <widget class="QLineEdit" name="nom_client">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>190</y>
+        <x>320</x>
+        <y>170</y>
         <width>135</width>
         <height>31</height>
        </rect>
@@ -512,8 +533,8 @@ color: #1C2951;
      <widget class="QLineEdit" name="prenom_client">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>280</y>
+        <x>320</x>
+        <y>240</y>
         <width>135</width>
         <height>31</height>
        </rect>
@@ -538,9 +559,9 @@ color: #1C2951;
      <widget class="QTableView" name="table_client">
       <property name="geometry">
        <rect>
-        <x>610</x>
+        <x>570</x>
         <y>20</y>
-        <width>551</width>
+        <width>741</width>
         <height>521</height>
        </rect>
       </property>
@@ -551,8 +572,8 @@ color: #1C2951;
      <widget class="QLineEdit" name="recherche_client">
       <property name="geometry">
        <rect>
-        <x>410</x>
-        <y>21</y>
+        <x>400</x>
+        <y>30</y>
         <width>151</width>
         <height>31</height>
        </rect>
@@ -577,8 +598,8 @@ color: #1C2951;
      <widget class="QDateEdit" name="date_n_client">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>390</y>
+        <x>320</x>
+        <y>330</y>
         <width>110</width>
         <height>22</height>
        </rect>
@@ -597,6 +618,120 @@ color: #1C2951;
        <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="email">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>410</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+
+
+{
+
+image: url(:/files/2.png);
+
+color: #1C2951;
+ border-style: outset;
+     font: bold 14px;
+     min-width: 8em;
+     padding: 6px;
+
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>                                      Email:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="num_tel">
+      <property name="geometry">
+       <rect>
+        <x>-100</x>
+        <y>480</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+
+
+{
+
+image: url(:/files/2.png);
+
+color: #1C2951;
+ border-style: outset;
+     font: bold 14px;
+     min-width: 8em;
+     padding: 6px;
+
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>                                                            Numéro téléphone:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="email_client">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>410</y>
+        <width>135</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QLineEdit {
+     background-color:#DCDCDC;
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: #1C2951;
+     font: bold 14px;
+     min-width: 7em;
+     padding: 6px;
+}
+ QLineEdit {
+     image: url(myindicator.png);
+ }
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="tel_client">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>490</y>
+        <width>135</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QLineEdit {
+     background-color:#DCDCDC;
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: #1C2951;
+     font: bold 14px;
+     min-width: 7em;
+     padding: 6px;
+}
+ QLineEdit {
+     image: url(myindicator.png);
+ }
+</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -605,7 +740,7 @@ color: #1C2951;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1157</width>
+     <width>1329</width>
      <height>26</height>
     </rect>
    </property>
@@ -613,9 +748,6 @@ color: #1C2951;
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(85, 85, 127)</string>
    </property>
    <attribute name="toolBarArea">
     <enum>BottomToolBarArea</enum>
@@ -628,13 +760,11 @@ color: #1C2951;
    <addaction name="trouver_fac"/>
    <addaction name="suprimer_fac"/>
    <addaction name="stat_facture"/>
+   <addaction name="imprimer_fact"/>
   </widget>
   <widget class="QToolBar" name="toolBar_2">
    <property name="windowTitle">
     <string>toolBar_2</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(85, 85, 127)</string>
    </property>
    <attribute name="toolBarArea">
     <enum>BottomToolBarArea</enum>
@@ -642,97 +772,104 @@ color: #1C2951;
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="trouver_client"/>
-   <addaction name="modifier_client"/>
    <addaction name="ajouter_client"/>
+   <addaction name="modifier_client"/>
+   <addaction name="trouver_client"/>
    <addaction name="supprimer_client"/>
   </widget>
-  <action name="ajouter_client">
-   <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/ajouter.png</normaloff>:/new/prefix1/ajouter.png</iconset>
-   </property>
-   <property name="text">
-    <string>ajouter</string>
-   </property>
-  </action>
   <action name="trouver_client">
    <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/trouver.png</normaloff>:/new/prefix1/trouver.png</iconset>
-   </property>
-   <property name="text">
-    <string>trouver</string>
-   </property>
-  </action>
-  <action name="supprimer_client">
-   <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/supprimer.png</normaloff>:/new/prefix1/supprimer.png</iconset>
-   </property>
-   <property name="text">
-    <string>supprimer</string>
-   </property>
-  </action>
-  <action name="modifier_client">
-   <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/modifier.jpg</normaloff>:/new/prefix1/modifier.jpg</iconset>
-   </property>
-   <property name="text">
-    <string>mod</string>
-   </property>
-  </action>
-  <action name="suprimer_fac">
-   <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/icons8-effacer-26.png</normaloff>:/new/prefix1/icons8-effacer-26.png</iconset>
-   </property>
-   <property name="text">
-    <string>sup</string>
-   </property>
-  </action>
-  <action name="trouver_fac">
-   <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/icons8-chercher-64.png</normaloff>:/new/prefix1/icons8-chercher-64.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/trouver.png</normaloff>:/files/trouver.png</iconset>
    </property>
    <property name="text">
     <string>trouv</string>
    </property>
   </action>
-  <action name="ajouter_fac">
+  <action name="modifier_client">
    <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/icons8-plus-48.png</normaloff>:/new/prefix1/icons8-plus-48.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/modifier.png</normaloff>:/files/modifier.png</iconset>
    </property>
    <property name="text">
-    <string>ajou</string>
+    <string>mod</string>
    </property>
   </action>
-  <action name="modifier_fac">
+  <action name="ajouter_client">
    <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/icons8-modifier-48.png</normaloff>:/new/prefix1/icons8-modifier-48.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/ajouter.png</normaloff>:/files/ajouter.png</iconset>
    </property>
    <property name="text">
-    <string>modifier</string>
+    <string>ajout</string>
+   </property>
+  </action>
+  <action name="supprimer_client">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/supprimer.png</normaloff>:/files/supprimer.png</iconset>
+   </property>
+   <property name="text">
+    <string>sup</string>
+   </property>
+  </action>
+  <action name="suprimer_fac">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/icons8-effacer-52.png</normaloff>:/files/icons8-effacer-52.png</iconset>
+   </property>
+   <property name="text">
+    <string>sup</string>
    </property>
   </action>
   <action name="stat_facture">
    <property name="icon">
-    <iconset resource="files/resource.qrc">
-     <normaloff>:/new/prefix1/analystic__chart__report__pie__graph__statics-512.png</normaloff>:/new/prefix1/analystic__chart__report__pie__graph__statics-512.png</iconset>
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/analystic__chart__report__pie__graph__statics-512.png</normaloff>:/files/analystic__chart__report__pie__graph__statics-512.png</iconset>
    </property>
    <property name="text">
-    <string>stat</string>
+    <string>sat</string>
+   </property>
+  </action>
+  <action name="trouver_fac">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/icons8-chercher-64.png</normaloff>:/files/icons8-chercher-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>trou</string>
+   </property>
+  </action>
+  <action name="modifier_fac">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/icons8-modifier-48.png</normaloff>:/files/icons8-modifier-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>mod</string>
+   </property>
+  </action>
+  <action name="ajouter_fac">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/icons8-plus-48.png</normaloff>:/files/icons8-plus-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>ajout</string>
+   </property>
+  </action>
+  <action name="imprimer_fact">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/imprimer.png</normaloff>:/files/imprimer.png</iconset>
+   </property>
+   <property name="text">
+    <string>imprim</string>
    </property>
   </action>
  </widget>
  <resources>
-  <include location="files/resource.qrc"/>
-  <include location="files/resource.qrc"/>
-  <include location="files/resource.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -6,13 +6,17 @@ client::client()
     nom="";
     prenom="";
     date_n=QDate(2000,01,01);
+    email="";
+    num_tel=0;
 }
 
-client::client(int id,QString nom,QString prenom,QDate date_n){
+client::client(int id,QString nom,QString prenom,QDate date_n,QString email, int num_tel){
     this->id=id;
     this->nom=nom;
     this->prenom=prenom;
     this->date_n=date_n;
+    this->email=email;
+    this->num_tel=num_tel;
 }
 
 client::~client(){
@@ -53,14 +57,31 @@ void client::setDate_n(QDate date_n){
     this->date_n=date_n;
 }
 
+QString client::getemail(){
+    return email;
+}
+
+void client::setemail(QString email){
+    this->email=email;
+}
+
+int client::getnum_tel(){
+    return num_tel;
+}
+void client::setnum_tel(int num_tel){
+    this->num_tel=num_tel;
+}
+
 bool client::ajouter(){
     QSqlQuery query;
-    query.prepare("insert into client (id,nom,prenom,date_n) values (:id,:nom,:prenom,:date_n)");
+    query.prepare("insert into client (id,nom,prenom,date_n,email,num_tel) values (:id,:nom,:prenom,:date_n,:email,:num_tel)");
     query.bindValue(":id",id);
     query.bindValue(":nom",nom);
     query.bindValue(":prenom",prenom);
     query.bindValue(":date_n",date_n);
-
+    query.bindValue(":email",email);
+    query.bindValue(":num_tel",num_tel);
+    //pour l'affectation et faire la relation entre les attribut
     return query.exec();
 }
 
@@ -100,11 +121,13 @@ bool client::supprimer(int id){
 
 bool client::modifier(int idc){
     QSqlQuery query;
-    query.prepare("update client set id=:id,nom=:nom,prenom=:prenom, date_n=:date_n where id=:idc");
+    query.prepare("update client set id=:id,nom=:nom,prenom=:prenom, date_n=:date_n,email=:email,num_tel=:num_tel where id=:idc");
     query.bindValue(":id",id);
     query.bindValue(":nom",nom);
     query.bindValue(":prenom",prenom);
     query.bindValue(":date_n",date_n);
+    query.bindValue(":email",email);
+    query.bindValue(":num_tel",num_tel);
     query.bindValue(":idc",idc);
 
     return query.exec();
@@ -121,6 +144,9 @@ client client::trouver(int id){
         c.setNom(query.value(1).toString());
         c.setPrenom(query.value(2).toString());
         c.setDate_n(query.value(3).toDate());
+        c.setemail(query.value(4).toString());
+        c.setnum_tel(query.value(5).toInt());
+
     }
 
     return c;
@@ -133,6 +159,8 @@ QSqlQueryModel * client::afficher(){
     model->setHeaderData(1,Qt::Horizontal, QObject::tr("Nom"));
     model->setHeaderData(2,Qt::Horizontal, QObject::tr("Prenom"));
     model->setHeaderData(3,Qt::Horizontal, QObject::tr("Date naissance"));
+    model->setHeaderData(4,Qt::Horizontal, QObject::tr("email"));
+    model->setHeaderData(5,Qt::Horizontal, QObject::tr("num_tel"));
 
 
     return model;
@@ -145,6 +173,9 @@ QSqlQueryModel* client::rechercher(const QString &str){
     model->setHeaderData(1,Qt::Horizontal, QObject::tr("Nom"));
     model->setHeaderData(2,Qt::Horizontal, QObject::tr("Prenom"));
     model->setHeaderData(3,Qt::Horizontal, QObject::tr("Date naissance"));
+    model->setHeaderData(4,Qt::Horizontal, QObject::tr("email"));
+    model->setHeaderData(5,Qt::Horizontal, QObject::tr("num_tel"));
+
 
 
     return model;

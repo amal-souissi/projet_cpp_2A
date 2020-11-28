@@ -26,8 +26,13 @@ void MainWindow::on_ajouter_client_triggered()
     QString nom=ui->nom_client->text();
     QString prenom=ui->prenom_client->text();
     QDate date_n=ui->date_n_client->date();
+    QString email=ui->email_client->text();
+    int num_tel=ui->tel_client->text().toInt();
 
-    client c(id,nom,prenom,date_n);
+
+
+
+    client c(id,nom,prenom,date_n,email,num_tel);
     bool test=c.ajouter();
     if(test){
         QMessageBox::information(nullptr,QObject::tr("client"),QObject::tr("Client ajouté avec succés"),QMessageBox::Ok);
@@ -36,6 +41,8 @@ void MainWindow::on_ajouter_client_triggered()
         ui->nom_client->setText("");
         ui->prenom_client->setText("");
         ui->date_n_client->setDate(QDate(2000,01,01));
+        ui->email_client->setText("");
+        ui->tel_client->setText("");
 
         ui->combo_client->clear();
         ui->combo_client->addItems(tmpclient.listeClients());
@@ -52,6 +59,9 @@ void MainWindow::on_trouver_client_triggered()
     ui->nom_client->setText(c.getNom());
     ui->prenom_client->setText(c.getPrenom());
     ui->date_n_client->setDate(c.getDate_n());
+    ui->email_client->setText(c.getemail());
+    ui->num_tel->setNum(c.getnum_tel());
+
 }
 
 void MainWindow::on_supprimer_client_triggered()
@@ -74,7 +84,10 @@ void MainWindow::on_modifier_client_triggered()
     QString nom=ui->nom_client->text();
     QString prenom=ui->prenom_client->text();
     QDate date_n=ui->date_n_client->date();
-    client c(id,nom,prenom,date_n);
+    QString email=ui->email_client->text();
+    int num_tel=ui->tel_client->text().toInt();
+
+    client c(id,nom,prenom,date_n,email,num_tel);
     bool test=c.modifier(id);
     if(test){
         QMessageBox::information(nullptr,QObject::tr("client"),QObject::tr("Client modifié avec succés"),QMessageBox::Ok);
@@ -83,6 +96,8 @@ void MainWindow::on_modifier_client_triggered()
         ui->nom_client->setText("");
         ui->prenom_client->setText("");
         ui->date_n_client->setDate(QDate(2000,01,01));
+        ui->email_client->setText("");
+        ui->tel_client->setText("");
     }
     else{
         QMessageBox::critical(nullptr,QObject::tr("client"),QObject::tr("erreur"),QMessageBox::Ok);
@@ -196,5 +211,16 @@ void MainWindow::on_id_client_textChanged(const QString &arg1)
     }
     else{
         ui->test_client->setText("");
+    }
+}
+
+void MainWindow::on_imprim_fact_triggered()
+{
+    QPrinter printer;
+    QPrintDialog dialog(&printer,this);
+    dialog.setWindowTitle("Imprimer facture");
+    dialog.addEnabledOption(QAbstractPrintDialog::PrintSelection);
+    if(dialog.exec()!=QDialog::Accepted){
+        return;
     }
 }
