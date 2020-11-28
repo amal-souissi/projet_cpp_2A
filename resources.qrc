@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../files/2.png</file>
+        <file>../files/583453e9474c5 - Copie.jpg</file>
+        <file>../files/ajouter.png</file>
+        <file>../files/analystic__chart__report__pie__graph__statics-512.png</file>
+        <file>../files/icons8-annuler-48.png</file>
+        <file>../files/icons8-calendrier-96.png</file>
+        <file>../files/icons8-chercher-64.png</file>
+        <file>../files/icons8-coche-48.png</file>
+        <file>../files/icons8-effacer-26.png</file>
+        <file>../files/icons8-effacer-52.png</file>
+        <file>../files/icons8-modifier-48.png</file>
+        <file>../files/icons8-plus-48.png</file>
+        <file>../files/icons8-vérifié-48.png</file>
+        <file>../files/images.png</file>
+        <file>../files/imprimer.png</file>
+        <file>../files/mod.png</file>
+        <file>../files/modifier.png</file>
+        <file>../files/photo-1520034475321-cbe63696469a.jpg</file>
+        <file>../files/resource.qrc</file>
+        <file>../files/supprimer.png</file>
+        <file>../files/trouver.png</file>
+    </qresource>
+</RCC>
