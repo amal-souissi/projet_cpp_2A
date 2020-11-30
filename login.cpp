@@ -16,12 +16,12 @@ login::~login()
 
 void login::on_pushButton_clicked()
 {
-    bool test=a.login(ui->usename->text(),ui->password->text());
+    bool test=a.login(ui->identifiant->text(),ui->motdepasse->text());
     if(test){
         MainWindow *w=new MainWindow();
         w->show();
     }
     else{
-        QMessageBox::critical(nullptr,QObject::tr("Connexion"),QObject::tr("username or pwd incorrect!"),QMessageBox::Cancel);
+        QMessageBox::critical(nullptr,QObject::tr("Connexion"),QObject::tr("identifiant or pwd incorrect!"),QMessageBox::Cancel);
     }
 }

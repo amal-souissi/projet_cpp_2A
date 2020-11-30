@@ -24,7 +24,7 @@ border-radus= 60px;
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>140</x>
       <y>20</y>
       <width>841</width>
       <height>551</height>
@@ -48,9 +48,9 @@ border-radus= 60px;
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>210</y>
-       <width>191</width>
+       <x>60</x>
+       <y>240</y>
+       <width>221</width>
        <height>71</height>
       </rect>
      </property>
@@ -63,26 +63,27 @@ font-size:24px;
 }</string>
      </property>
      <property name="text">
-      <string>    Username:</string>
+      <string>Identifiant:</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="usename">
+    <widget class="QLineEdit" name="identifiant">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>320</y>
-       <width>191</width>
-       <height>81</height>
+       <x>290</x>
+       <y>250</y>
+       <width>301</width>
+       <height>71</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QLineEdit  {
+	color: rgb(255, 255, 255);
 	
-     background-color:#C4C9C7;
+     background-color:rgb(156, 156, 156);
      border-style: outset;
      border-width: 20px;
     border-radius: 60px;
-     border-color: #B53737;
+     border-color: #ffffff;
      font: bold 14px;
      min-width: 7em;
      padding: 6px;
@@ -92,9 +93,9 @@ font-size:24px;
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>340</y>
-       <width>121</width>
+       <x>10</x>
+       <y>350</y>
+       <width>181</width>
        <height>51</height>
       </rect>
      </property>
@@ -108,23 +109,23 @@ font-size:24px;
 }</string>
      </property>
      <property name="text">
-      <string>Password:</string>
+      <string>mot de passe :</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="password">
+    <widget class="QLineEdit" name="motdepasse">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>210</y>
-       <width>191</width>
-       <height>81</height>
+       <x>290</x>
+       <y>350</y>
+       <width>301</width>
+       <height>71</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QLineEdit  {
 	color: rgb(255, 255, 255);
 	
-     background-color:#1C2951;
+     background-color:rgb(156, 156, 156);
      border-style: outset;
      border-width: 20px;
     border-radius: 60px;
@@ -138,53 +139,71 @@ font-size:24px;
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>460</y>
-       <width>561</width>
-       <height>71</height>
+       <x>230</x>
+       <y>470</y>
+       <width>401</width>
+       <height>61</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
 	font: 11pt ;
-     background-color:#B53737;
+     background-color:#008000;
      border-style: outset;
      border-width: 1px;
     border-radius: 100px;
-     border-color: #B53737;
+     border-color: #008000;
      font: bold 40px;
      min-width: 7em;
      padding: 6px;
 }</string>
      </property>
      <property name="text">
-      <string>LOGIN</string>
+      <string>connexion</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QWidget" name="widget" native="true">
      <property name="geometry">
       <rect>
-       <x>320</x>
-       <y>0</y>
-       <width>201</width>
-       <height>201</height>
+       <x>340</x>
+       <y>20</y>
+       <width>191</width>
+       <height>81</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton  {
-	background-image: url(:/files/login.png);
-     background-color:#1C2951;
-     border-style: outset;
-     border-width: 2px;
-     border-radius: 60px;
-     border-color: #B53737;
-     font: bold 14px;
-     min-width: 7em;
-     padding: 6px;
-}</string>
+      <string notr="true">image: url(:/files/2.png);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>120</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 12pt ;
+font-family:century gothic;
+font-size:24px;</string>
      </property>
      <property name="text">
-      <string/>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline; color:#af3911;&quot;&gt;WALLYS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>180</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Bienvenue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>

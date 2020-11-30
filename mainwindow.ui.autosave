@@ -13,9 +13,6 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">b</string>
-  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
@@ -50,280 +47,6 @@ image: url(:/2.png);</string>
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>FACTURE</string>
-     </attribute>
-     <widget class="QLabel" name="filtrer">
-      <property name="geometry">
-       <rect>
-        <x>-100</x>
-        <y>10</y>
-        <width>481</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel
-
-
-{
-
-image: url(:/files/2.png);
-
-color: #1C2951;
- border-style: outset;
-     font: bold 14px;
-     min-width: 8em;
-     padding: 6px;
-
-
-}
-</string>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:14pt; text-decoration: underline;&quot;&gt;Filtrer par Client:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="num_F">
-      <property name="geometry">
-       <rect>
-        <x>-70</x>
-        <y>130</y>
-        <width>381</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel
-
-
-{
-
-image: url(:/files/2.png);
-
-color: #1C2951;
- border-style: outset;
-     font: bold 14px;
-     min-width: 8em;
-     padding: 6px;
-
-
-}
-</string>
-      </property>
-      <property name="text">
-       <string>                                                        Numéro facture :</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="montant">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>240</y>
-        <width>251</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel
-
-
-{
-
-image: url(:/files/2.png);
-
-color: #1C2951;
- border-style: outset;
-     font: bold 14px;
-     min-width: 8em;
-     padding: 6px;
-
-
-}
-</string>
-      </property>
-      <property name="text">
-       <string>                                      Montant :</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="type">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>360</y>
-        <width>251</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel
-
-
-{
-
-image: url(:/files/2.png);
-
-color: #1C2951;
- border-style: outset;
-     font: bold 14px;
-     min-width: 8em;
-     padding: 6px;
-
-
-}
-</string>
-      </property>
-      <property name="text">
-       <string>                                             Client:</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="filtrer_client">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>20</y>
-        <width>201</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"> QLineEdit {
-     background-color:#DCDCDC;
-     border-style: outset;
-     border-width: 2px;
-     border-radius: 10px;
-     border-color: #1C2951;
-     font: bold 14px;
-     min-width: 7em;
-     padding: 6px;
-}
- QLineEdit {
-     image: url(myindicator.png);
- }
-</string>
-      </property>
-      <property name="frame">
-       <bool>false</bool>
-      </property>
-      <property name="dragEnabled">
-       <bool>false</bool>
-      </property>
-      <property name="readOnly">
-       <bool>false</bool>
-      </property>
-      <property name="clearButtonEnabled">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="num_fact">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>140</y>
-        <width>135</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLineEdit {
-     background-color:#DCDCDC;
-     border-style: outset;
-     border-width: 2px;
-     border-radius: 10px;
-     border-color: #1C2951;
-     font: bold 14px;
-     min-width: 7em;
-     padding: 6px;
-}
- QLineEdit {
-     image: url(myindicator.png);
- }
-</string>
-      </property>
-     </widget>
-     <widget class="QTableView" name="table_fac">
-      <property name="geometry">
-       <rect>
-        <x>630</x>
-        <y>20</y>
-        <width>681</width>
-        <height>521</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="montant_fac">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>250</y>
-        <width>135</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLineEdit {
-     background-color:#DCDCDC;
-     border-style: outset;
-     border-width: 2px;
-     border-radius: 10px;
-     border-color:#1C2951;
-     font: bold 14px;
-     min-width: 7em;
-     padding: 6px;
-}
- QLineEdit {
-     image: url(myindicator.png);
- }
-</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="combo_client">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>360</y>
-        <width>135</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QComboBox {
-     background-color:#DCDCDC;
-     border-style: outset;
-     border-width: 2px;
-     border-radius: 10px;
-     border-color:#1C2951;
-     font: bold 14px;
-     min-width: 7em;
-     padding: 6px;
-}
-QComboBox {
-     image: url(myindicator.png);
- }
-</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="nom_prenom_client">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>390</y>
-        <width>131</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </widget>
     <widget class="QWidget" name="tab">
      <attribute name="title">
       <string>CLIENT</string>
@@ -736,6 +459,280 @@ color: #1C2951;
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>FACTURE</string>
+     </attribute>
+     <widget class="QLabel" name="filtrer">
+      <property name="geometry">
+       <rect>
+        <x>-100</x>
+        <y>10</y>
+        <width>481</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+
+
+{
+
+image: url(:/files/2.png);
+
+color: #1C2951;
+ border-style: outset;
+     font: bold 14px;
+     min-width: 8em;
+     padding: 6px;
+
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:14pt; text-decoration: underline;&quot;&gt;Filtrer par Client:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="num_F">
+      <property name="geometry">
+       <rect>
+        <x>-70</x>
+        <y>130</y>
+        <width>381</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+
+
+{
+
+image: url(:/files/2.png);
+
+color: #1C2951;
+ border-style: outset;
+     font: bold 14px;
+     min-width: 8em;
+     padding: 6px;
+
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>                                                        Numéro facture :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="montant">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>251</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+
+
+{
+
+image: url(:/files/2.png);
+
+color: #1C2951;
+ border-style: outset;
+     font: bold 14px;
+     min-width: 8em;
+     padding: 6px;
+
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>                                      Montant :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="type">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>360</y>
+        <width>251</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+
+
+{
+
+image: url(:/files/2.png);
+
+color: #1C2951;
+ border-style: outset;
+     font: bold 14px;
+     min-width: 8em;
+     padding: 6px;
+
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>                                             Client:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="filtrer_client">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>20</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QLineEdit {
+     background-color:#DCDCDC;
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: #1C2951;
+     font: bold 14px;
+     min-width: 7em;
+     padding: 6px;
+}
+ QLineEdit {
+     image: url(myindicator.png);
+ }
+</string>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="num_fact">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>140</y>
+        <width>135</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+     background-color:#DCDCDC;
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color: #1C2951;
+     font: bold 14px;
+     min-width: 7em;
+     padding: 6px;
+}
+ QLineEdit {
+     image: url(myindicator.png);
+ }
+</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="table_fac">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>20</y>
+        <width>681</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="montant_fac">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>250</y>
+        <width>135</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+     background-color:#DCDCDC;
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color:#1C2951;
+     font: bold 14px;
+     min-width: 7em;
+     padding: 6px;
+}
+ QLineEdit {
+     image: url(myindicator.png);
+ }
+</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combo_client">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>360</y>
+        <width>135</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+     background-color:#DCDCDC;
+     border-style: outset;
+     border-width: 2px;
+     border-radius: 10px;
+     border-color:#1C2951;
+     font: bold 14px;
+     min-width: 7em;
+     padding: 6px;
+}
+QComboBox {
+     image: url(myindicator.png);
+ }
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nom_prenom_client">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>390</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -761,12 +758,10 @@ color: #1C2951;
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="ajouter_fac"/>
-   <addaction name="modifier_fac"/>
-   <addaction name="trouver_fac"/>
-   <addaction name="suprimer_fac"/>
-   <addaction name="stat_facture"/>
-   <addaction name="imprimer_fact"/>
+   <addaction name="ajouter_client"/>
+   <addaction name="modifier_client"/>
+   <addaction name="trouver_client"/>
+   <addaction name="supprimer_client"/>
   </widget>
   <widget class="QToolBar" name="toolBar_2">
    <property name="windowTitle">
@@ -781,10 +776,12 @@ color: #1C2951;
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="ajouter_client"/>
-   <addaction name="modifier_client"/>
-   <addaction name="trouver_client"/>
-   <addaction name="supprimer_client"/>
+   <addaction name="ajouter_fac"/>
+   <addaction name="modifier_fac"/>
+   <addaction name="trouver_fac"/>
+   <addaction name="suprimer_fac"/>
+   <addaction name="stat_facture"/>
+   <addaction name="imprimer_fact"/>
   </widget>
   <action name="trouver_client">
    <property name="icon">

@@ -749,6 +749,9 @@ color: #1C2951;
    <property name="windowTitle">
     <string>toolBar</string>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 85, 127)</string>
+   </property>
    <attribute name="toolBarArea">
     <enum>BottomToolBarArea</enum>
    </attribute>
@@ -765,6 +768,9 @@ color: #1C2951;
   <widget class="QToolBar" name="toolBar_2">
    <property name="windowTitle">
     <string>toolBar_2</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 85, 127)</string>
    </property>
    <attribute name="toolBarArea">
     <enum>BottomToolBarArea</enum>

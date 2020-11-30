@@ -5,12 +5,14 @@ admin::admin()
 
 }
 
-bool admin::login(QString username,QString password){
+bool admin::login(QString identifiant,QString motdepasse){
     QSqlQuery query;
-    query.prepare("select * from login where username=:username and password=:password ");
-    query.bindValue(":username",username);
-    query.bindValue(":password",password);
+    query.prepare("select * from login where identifiant=:identifiant and motdepasse=:motdepasse ");
+    query.bindValue(":identifiant",identifiant);
+    query.bindValue(":motdepasse",motdepasse);
+
     query.exec();
+
     int total=0;
     while(query.next()){
         total++;
