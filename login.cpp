@@ -20,6 +20,7 @@ void login::on_pushButton_clicked()
     if(test){
         MainWindow *w=new MainWindow();
         w->show();
+        hide();
     }
     else{
         QMessageBox::critical(nullptr,QObject::tr("Connexion"),QObject::tr("identifiant or pwd incorrect!"),QMessageBox::Cancel);

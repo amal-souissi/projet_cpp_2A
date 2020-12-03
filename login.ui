@@ -135,6 +135,9 @@ font-size:24px;
      padding: 6px;
 }</string>
      </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">

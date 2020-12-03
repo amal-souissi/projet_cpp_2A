@@ -53,6 +53,8 @@ private slots:
 
     void on_imprim_fact_triggered();
 
+    void on_imprimer_fact_triggered();
+
 private:
     Ui::MainWindow *ui;
     client tmpclient;

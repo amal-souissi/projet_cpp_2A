@@ -224,3 +224,52 @@ void MainWindow::on_imprim_fact_triggered()
         return;
     }
 }
+
+void MainWindow::on_imprimer_fact_triggered()
+{
+    QString strStream;
+    QTextStream out(&strStream);
+
+    const int rowCount = ui->table_fac->model()->rowCount();
+    const int columnCount = ui->table_fac->model()->columnCount();
+
+    out <<  "<html>\n"
+    <<"<head>\n"
+    <<"<meta Content=\"Text/html; charset=Windows-1251\">\n"
+    <<  QString("<title>%1</title>\n").arg("strTitle")
+    <<  "</head>\n"
+    <<"<body bgcolor=#ffffff link=#5000A0>\n"
+    <<"<center> <H1>Facture</H1></br></br><table border=1 cellspacing=0 cellpadding=2>\n";
+    out << "<thead><tr bgcolor=#f0f0f0> <th>Numero</th>";
+    for (int column = 0; column < columnCount; column++){
+        if (!ui->table_fac->isColumnHidden(column)){
+            out << QString("<th>%1</th>").arg(ui->table_fac->model()->headerData(column, Qt::Horizontal).toString());
+        }
+    }
+        out << "</tr></thead>\n";
+        for (int row = 0; row < rowCount; row++) {
+            out << "<tr> <td bkcolor=0>" << row+1 <<"</td>";
+            for (int column = 0; column < columnCount; column++) {
+                if (!ui->table_fac->isColumnHidden(column)) {
+                    QString data = ui->table_fac->model()->data(ui->table_fac->model()->index(row, column)).toString().simplified();
+                    out << QString("<td bkcolor=0>%1</td>").arg((!data.isEmpty()) ? data : QString("&nbsp;"));
+                }
+            }
+            out << "</tr>\n";
+        }
+        out <<  "</table> </center>\n"
+        <<"</body>\n"
+        <<"</html>\n";
+
+        QString fileName = QFileDialog::getSaveFileName((QWidget* )0, "Sauvegarder en PDF", QString(), "*.pdf");
+        if (QFileInfo(fileName).suffix().isEmpty()) { fileName.append(".pdf"); }
+        QPrinter printer (QPrinter::PrinterResolution);
+        printer.setOutputFormat(QPrinter::PdfFormat);
+        printer.setPaperSize(QPrinter::A4);
+        printer.setOutputFileName(fileName);
+
+        QTextDocument doc;
+        doc.setHtml(strStream);
+        doc.setPageSize(printer.pageRect().size()); // This is necessary if you want to hide the page number
+        doc.print(&printer);
+}

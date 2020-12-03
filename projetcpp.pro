@@ -17,7 +17,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     admin.cpp \
-    amal.cpp \
     client.cpp \
     connection.cpp \
     facture.cpp \

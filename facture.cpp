@@ -123,9 +123,9 @@ facture::facture()
   QSqlQueryModel * facture::afficher(){
       QSqlQueryModel *model=new QSqlQueryModel();
       model->setQuery("select num_fact,montant,date_f,nom from facture inner join client on client.id=facture.id_client ");
-      model->setHeaderData(0,Qt::Horizontal, QObject::tr("num_fact"));
+      model->setHeaderData(0,Qt::Horizontal, QObject::tr("num facture"));
       model->setHeaderData(1,Qt::Horizontal, QObject::tr("montant"));
-      model->setHeaderData(2,Qt::Horizontal, QObject::tr("date_f"));
+      model->setHeaderData(2,Qt::Horizontal, QObject::tr("date facture"));
       model->setHeaderData(3,Qt::Horizontal, QObject::tr("Client"));
 
 
@@ -135,10 +135,10 @@ facture::facture()
   QSqlQueryModel* facture::rechercher(const QString &str){
       QSqlQueryModel *model=new QSqlQueryModel();
       model->setQuery("select num_fact,montant,date_f,nom from facture inner join client on client.id=facture.id_client where nom like '"+str+"%' or id like '"+str+"%' or prenom like '"+str+"%'");
-      model->setHeaderData(0,Qt::Horizontal, QObject::tr("Id"));
-      model->setHeaderData(1,Qt::Horizontal, QObject::tr("Nom"));
-      model->setHeaderData(2,Qt::Horizontal, QObject::tr("Prenom"));
-      model->setHeaderData(3,Qt::Horizontal, QObject::tr("Date naissance"));
+      model->setHeaderData(0,Qt::Horizontal, QObject::tr("num facture"));
+      model->setHeaderData(1,Qt::Horizontal, QObject::tr("montant"));
+      model->setHeaderData(2,Qt::Horizontal, QObject::tr("date facture"));
+      model->setHeaderData(3,Qt::Horizontal, QObject::tr("Client"));
 
 
       return model;
